@@ -8,7 +8,7 @@ emojis = list(emoji.EMOJI_DATA.keys())
 
 print(len(emojis))
 
-for size in [16, 32, 64]:
+for size in [16, 32, 64, 128]:
 
     directory = f"./png/{size}x{size}"
     os.makedirs(directory, exist_ok=True)
