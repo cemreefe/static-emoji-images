@@ -6,7 +6,7 @@ Static website that holds and serves emojis
 1. Choose an emoji of your chioce (i.e. 🐬)
 2. Go to
   ```
-  http://emoji.dutl.uk/png/64x64/🐬.png
+  https://emoji.dutl.uk/png/64x64/🐬.png
   ```
 3. Enjoy!
 
