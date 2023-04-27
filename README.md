@@ -1,4 +1,4 @@
-# EmojiWaiter
+# Emoji.dutl.uk
 Static website that holds and serves emojis
 
 ## Usage
