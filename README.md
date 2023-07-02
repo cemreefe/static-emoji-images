@@ -28,7 +28,7 @@ Add the following line in the `<head>` section of your html file
 
 See my personal blog!
 
-[https://cemrekarakas.com/)[(https://cemrekarakas.com/]
+[https://cemrekarakas.com/](https://cemrekarakas.com/)
 
 
 
