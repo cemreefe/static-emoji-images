@@ -9,8 +9,6 @@ emojis = list(emoji.EMOJI_DATA.keys())
 
 print(len(emojis))
 
-f = open("EMOJI.md", "w")
-
 for size in [16, 32, 64, 128, 256]:
 
     directory = f"./png/{size}x{size}"
@@ -23,7 +21,6 @@ for size in [16, 32, 64, 128, 256]:
             filename = f"{directory}/{e}.png"
 
             if os.path.exists(filename):
-                f.write(f"![Emoji {e}]({filename}) ")
                 continue
 
             with Image.new('RGBA', (size, size), (0, 0, 0, 0)) as image:
@@ -34,11 +31,6 @@ for size in [16, 32, 64, 128, 256]:
 
                 # Save the image as a PNG file
                 image.save(filename)
-
-            f.write(f"![Emoji {e}]({filename}) ")
         
         except Exception as ex:
             print("Couldn't process emoji: ", e, ex)
-
-        
-f.close()

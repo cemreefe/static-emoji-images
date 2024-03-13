@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f2f2f2;
+        }
+
+        a.nav {
+            text-align: center;
+            padding: 1rem;
+            margin: 2rem;
+            background-color: #f2f2f2;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 2rem;
+            padding: 2rem;
+        }
+
+        .emoji-container {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .emoji-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        li {
+            margin: 0.25rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background-color: #e6e6e6;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #d9d9d9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Emoji Gallery</h1>
+    <a href="/" class="nav">Home</a>
+    <div class="grid">
+        {% for emoji in emojis %}
+        <div class="emoji-container">
+            <img class="emoji-image" src="{{ emoji.paths['128x128'] }}" alt="{{ emoji.name }}">
+            <h3>{{ emoji.name }}</h3>
+            <ul>
+                {% for size in sizes %}
+                {% if size in emoji.paths %}
+                <li><a href="{{ emoji.paths[size] }}">{{ size }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -32,5 +32,5 @@ See my personal blog!
 
 ## 🖼️ Gallery
 
-To browse all images see: [](EMOJI)
+To browse all images see: [](gallery.html)
 
