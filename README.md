@@ -7,7 +7,7 @@ We store emojis in various sizes from 16x16 to 256x256. We have two parameters i
 
 `https://emoji.dutl.uk/png/<size>/<emoji>.png`
 
-## 🖼️ Accessing raw images
+## 🍣 ️ Accessing raw images
 
 1. Choose an emoji of your chioce (i.e. 🐬)
 2. Go to https://emoji.dutl.uk/png/64x64/🐬.png
@@ -30,5 +30,7 @@ See my personal blog!
 
 [https://cemrekarakas.com/](https://cemrekarakas.com/)
 
+## 🖼️ Gallery
 
+To browse all images see: [](EMOJI)
 
