@@ -31,7 +31,7 @@
             padding: 2rem;
         }
 
-        .emoji-container {
+        .ec {
             background-color: #f2f2f2;
             padding: 1rem;
             border-radius: 8px;
@@ -39,7 +39,7 @@
             text-align: center;
         }
 
-        .emoji-image {
+        .ei {
             max-width: 100%;
             height: auto;
             border-radius: 4px;
@@ -82,17 +82,17 @@
     <a href="/" class="nav">Home</a>
     <div class="grid">
         {% for emoji in emojis %}
-        <div class="emoji-container">
-            <img class="emoji-image" src="{{ emoji.paths['128x128'] }}" alt="{{ emoji.name }}">
-            <h3>{{ emoji.name }}</h3>
-            <ul>
-                {% for size in sizes %}
-                {% if size in emoji.paths %}
-                <li><a href="{{ emoji.paths[size] }}">{{ size }}</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
+<div class="ec">
+<img class="ei" src="{{ emoji.paths['128x128'] }}" alt="{{ emoji.name }}">
+<h3>{{ emoji.name }}</h3>
+<ul>
+{% for size in sizes %}
+{% if size in emoji.paths %}
+<li><a href="{{ emoji.paths[size] }}">{{ size }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+</div>
         {% endfor %}
     </div>
 </body>
