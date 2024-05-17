@@ -2,7 +2,7 @@ A static website that holds and serves emojis. Useful when you need a big emoji 
 
 ## 🖼️ Gallery
 
-[![Gallery Preview Image](<img width="726" alt="image" src="https://github.com/cemreefe/static-emoji-images/assets/44120900/0a72ee03-f51b-42bd-8b0b-54ff2ece8146">)](gallery)
+[![Gallery Preview Image](gallery-preview.png)](gallery)
 
 To browse all images go to [emoji gallery](gallery)
 
