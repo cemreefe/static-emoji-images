@@ -1,5 +1,10 @@
-
 A static website that holds and serves emojis. Useful when you need a big emoji in image format or when you want to quickly set up a favicon for your webpage.
+
+## 🖼️ Gallery
+
+[![Gallery Preview Image](<img width="726" alt="image" src="https://github.com/cemreefe/static-emoji-images/assets/44120900/0a72ee03-f51b-42bd-8b0b-54ff2ece8146">)](gallery)
+
+To browse all images go to [emoji gallery](gallery)
 
 ## 📜 Parameters
 
@@ -29,8 +34,4 @@ Add the following line in the `<head>` section of your html file
 See my personal blog!
 
 [https://cemrekarakas.com/](https://cemrekarakas.com/)
-
-## 🖼️ Gallery
-
-To browse all images see [emoji gallery](gallery.html)
 
