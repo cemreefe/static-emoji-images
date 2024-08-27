@@ -4,7 +4,7 @@ A static website that holds and serves emojis. Useful when you need a big emoji 
 
 [![Gallery Preview Image](gallery-preview.png)](gallery)
 
-To browse all images go to [emoji gallery](gallery)
+To browse all images go to [emoji gallery](https://cemreefe.github.io/static-emoji-images/gallery.html)
 
 ## 📜 Parameters
 
